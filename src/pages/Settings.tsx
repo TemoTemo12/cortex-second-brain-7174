@@ -2,6 +2,7 @@
 import React from 'react';
 import { AnimatedTransition } from '@/components/AnimatedTransition';
 import { useAnimateIn } from '@/lib/animations';
+import { useTheme } from '@/contexts/ThemeContext';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
@@ -9,6 +10,7 @@ import { Label } from "@/components/ui/label";
 
 const Settings = () => {
   const showContent = useAnimateIn(false, 300);
+  const { theme, toggleTheme } = useTheme();
   
   return (
     <div className="max-w-7xl mx-auto px-4 pt-24 pb-16">
@@ -86,7 +88,11 @@ const Settings = () => {
                         Toggle between light and dark themes
                       </p>
                     </div>
-                    <Switch id="dark-mode" defaultChecked />
+                    <Switch 
+                      id="dark-mode" 
+                      checked={theme === 'dark'} 
+                      onCheckedChange={toggleTheme}
+                    />
                   </div>
                   
                   <div className="flex items-center justify-between">

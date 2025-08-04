@@ -165,11 +165,11 @@ const HowPage = () => {
           <div ref={heroRef} className="relative w-full max-w-3xl mx-auto">
             <div className="absolute -z-10 w-[300px] h-[300px] rounded-full bg-gradient-to-r from-primary/30 to-accent/30 blur-3xl left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
             <div className="glass-panel rounded-full py-5 px-8 inline-block mx-auto mb-12">
-              <h1 className="text-2xl md:text-3xl font-bold text-primary">How does Cortex work?</h1>
+              <h1 className="text-2xl md:text-3xl font-bold text-primary">How does JemalaGPT work?</h1>
             </div>
             
             <p className="text-xl text-center text-foreground/80 max-w-2xl mx-auto mb-12">
-              There's a lot of magic and sophisticated technology behind Cortex, but we've kept it simple to use.
+              There's a lot of magic and sophisticated technology behind JemalaGPT, but we've kept it simple to use.
             </p>
             
             <div className="flex justify-center">

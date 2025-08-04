@@ -135,7 +135,7 @@ export const Navbar = () => {
     setActive(id);
   };
 
-  const cortexSubmenu = [
+  const jemalaGPTSubmenu = [
     { to: '/', icon: <Info size={18} />, label: 'What', id: 'what' },
     { to: '/why', icon: <HelpCircle size={18} />, label: 'Why', id: 'why' },
     { to: '/how', icon: <Code size={18} />, label: 'How', id: 'how' },
@@ -156,16 +156,16 @@ export const Navbar = () => {
       <TooltipProvider>
         <header className="glass-panel fixed top-6 left-1/2 transform -translate-x-1/2 z-40 rounded-lg px-1 py-1">
           <nav className="flex items-center">
-            {/* Cortex with submenu */}
+            {/* JemalaGPT with submenu */}
             <NavItem
               to="#"
               icon={<Brain size={20} />}
-              label="Cortex"
+              label="JemalaGPT"
               active={['what', 'why', 'how'].includes(active)}
               onClick={() => {}}
               hasSubmenu={true}
             >
-              {cortexSubmenu.map((item) => (
+              {jemalaGPTSubmenu.map((item) => (
                 <SubMenuItem
                   key={item.id}
                   to={item.to}
